@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    <div id="site-content"><!-- For Mobile Menu -->
+      {% include header.html %}
+
+      <!-- Main Content -->
+      <div class="container" id="main">
+
+        {{ content }}
+
+        <hr class="line" />
+      </div>
+
+      {% include footer.html %}
+
+    </div><!-- End #site-content -->
+  </body>
+</html>
