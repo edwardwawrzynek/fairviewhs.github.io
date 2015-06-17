@@ -6,6 +6,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://about.fairviewhs.org" # the base hostname & protocol for your site
 github_username: fairviewhs
+permalink: pretty
 
 defaults:
   -
