@@ -3,19 +3,17 @@
   {% include head.html %}
 
   <body>
-    <div id="site-content"><!-- For Mobile Menu -->
+    <div id="site-content">
       {% include header.html %}
 
-      <!-- Main Content -->
       <div class="container" id="main">
-
         {{ content }}
-
-        <hr class="line" />
       </div>
 
-      {% include footer.html %}
+      <div class="footer-push"></div>
+    </div>
 
-    </div><!-- End #site-content -->
+    {% include footer.html %}
+
   </body>
 </html>

@@ -6,7 +6,10 @@ module.exports = function(grunt) {
       all_src : {
         files: {
           'js/app.min.js': [
-            '_js/application.js', '_js/jquery.min.js', '_js/turbolinks.js'
+            '_js/application.js',
+            '_js/jquery.min.js',
+            '_js/prefix-free.js',
+            '_js/turbolinks.js'
           ]
         }
       }

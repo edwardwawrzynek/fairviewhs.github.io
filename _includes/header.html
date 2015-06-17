@@ -1,19 +1,17 @@
 <header class="app-header" id="app-header">
   <div class="container">
     <div class="header-wrapper">
-      <!-- Logo -->
       <div class="logo">
-        <h1><a href="/">{{ site.title }}</a></h1>
+        <img src="/images/logo.png">
       </div>
 
-      <!-- Main-Nav -->
       <nav class="main-nav">
         <ul>
-          {% for page in site.pages %}
-            {% if page.title %}
-              <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
+          <li><a href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/history">History</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </div>
