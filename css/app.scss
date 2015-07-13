@@ -55,6 +55,8 @@ html, body {
 }
 
 html {
+  font-family: "Roboto";
+  font-weight: 100;
   overflow-y: scroll;
   max-width: 1590px;
   margin: 0 auto;
@@ -92,7 +94,7 @@ img {
 
   li {
     display: inline-block;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.5em;
 
     &:not(:first-child) {
@@ -112,7 +114,7 @@ img {
 
 footer {
   background-color: $main-color;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $background-color;
   padding: 1.5em 5em 0.3em 5em;
   height: 4em;
@@ -131,6 +133,7 @@ footer {
   .copyright {
     margin-left: 2em;
     font-size: 1.2em;
+    font-weight: 300;
   }
 
   ul {
@@ -169,7 +172,8 @@ footer {
 .post-title {
   text-align: center;
   font-size: 2em;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .post-content {
