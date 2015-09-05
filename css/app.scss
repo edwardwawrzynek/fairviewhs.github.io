@@ -185,6 +185,24 @@ footer {
   margin-bottom: 5em;
 }
 
+.post-meta {
+  margin-left: 10em;
+  margin-right: 10em;
+  font-weight: bold;
+}
+
+td {
+  width: 130px;
+}
+
+table#leaders tr td ul {
+  list-style-type: none;
+}
+
+ul#members li {
+  margin-left: 20px;
+}
+
 // Remove Firefox's dotted outline on buttons and links
 //   http://stackoverflow.com/questions/71074/how-to-remove-firefoxs-dotted-outline-on-buttons-as-well-as-links
 :focus { outline: none; }
