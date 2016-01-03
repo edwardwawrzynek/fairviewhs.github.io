@@ -150,7 +150,7 @@ footer {
         text-decoration: none;
 
         &:hover {
-          text-decoration: underline;
+          border-bottom: solid 0.05em #fff;
         }
       }
     }
