@@ -3,8 +3,8 @@ title: About the web team
 email: jasonvperrin@gmail.com
 description: >
   A description of the history, past and current members of the web team.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://about.fairviewhs.org" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://about.fairviewhs.org"
 github_username: fairviewhs
 permalink: pretty
 

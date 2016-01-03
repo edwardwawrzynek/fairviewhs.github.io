@@ -72,7 +72,6 @@ ul {
   width: 100%;
   background-image: url('/images/blurred-code.png');
   background-position: center 0%;
-  // background-color: $main-color;
   text-align: center;
 }
 
@@ -106,7 +105,7 @@ img {
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline;
+        border-bottom: solid 0.05em #fff;
       }
     }
   }
@@ -169,6 +168,15 @@ footer {
   height: 5.8em;
 }
 
+.post-link {
+  transition: color .1s;
+  color: $main-color-dark;
+
+  &:hover {
+    color: $main-color-light;
+  }
+}
+
 .post-title {
   text-align: center;
   font-size: 2em;
@@ -177,8 +185,8 @@ footer {
 }
 
 .post-content {
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .post {
@@ -186,21 +194,27 @@ footer {
 }
 
 .post-meta {
-  margin-left: 10em;
-  margin-right: 10em;
   font-weight: bold;
 }
 
-td {
-  width: 130px;
+td:first-child {
+  padding-right: 3em;
 }
 
-table#leaders tr td ul {
-  list-style-type: none;
+table {
+  width: 100%;
+
+  tr td ul {
+    list-style-type: none;
+  }
 }
 
-ul#members li {
-  margin-left: 20px;
+ul.members {
+  margin-top: 0;
+
+  li {
+    margin-left: 1em;
+  }
 }
 
 // Remove Firefox's dotted outline on buttons and links
