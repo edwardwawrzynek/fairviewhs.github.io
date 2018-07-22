@@ -23,6 +23,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$small-media-break: 767px;
+
 // // Width of the content area
 // $content-width:    800px;
 
@@ -115,42 +117,77 @@ footer {
   background-color: $main-color;
   font-family: "Roboto", sans-serif;
   color: $background-color;
-  padding: 1.5em 5em 0.3em 5em;
-  height: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
 
-  .footer-wrapper {
-    display: table;
-    width: 100%;
-    text-align: left;
+  @media (min-width: $small-media-break) {
+    // This allows links to be full width for mobile
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
-  .copyright, .footer-nav {
-    vertical-align: middle;
-    display: table-cell;
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: $small-media-break) {
+      flex-direction: row;
+    }
   }
 
   .copyright {
-    margin-left: 2em;
     font-size: 1.2em;
     font-weight: 300;
   }
 
+  .footer-nav {
+    width: 100%;
+    max-width: 500px;
+
+    @media ($small-media-break) {
+      align-self: right;
+    }
+  }
+
   ul {
-    text-align: right;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $small-media-break) {
+      li + li {
+        margin-top: 1.25em;
+      }
+    }
+
+    @media (min-width: $small-media-break) {
+      flex-direction: row;
+    }
 
     li {
-      display: inline-block;
+      flex-grow: 1;
+      display: flex;
 
-      &:not(:first-child) {
-        margin-left: 3em;
+      @media (min-width: $small-media-break) {
+        li:not(:first-child) {
+          margin-left: 3em;
+        }
+        display: inline-block;
       }
 
       a {
+        flex-grow: 1;
         color: $background-color;
         text-decoration: none;
 
-        &:hover {
-          border-bottom: solid 0.05em #fff;
+        @media (min-width: $small-media-break) {
+          &:hover {
+            border-bottom: solid 0.05em #fff;
+          }
         }
       }
     }
