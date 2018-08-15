@@ -368,3 +368,59 @@ ul.members {
   &.kpfromer { background-image: url("/images/folios/kpfromer.png"); }
   &.nfiner { background-image: url("/images/folios/nfiner.png"); }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="submit"],
+textarea {
+  border-radius: 8px;
+  margin: .5rem 0 1rem 0;
+}
+
+input[type="text"],
+textarea {
+  border: 1px solid $grey-color;
+  padding: .5rem;
+}
+
+textarea { height: 8rem; }
+
+input[type="submit"] {
+  border: 1px solid $main-color-dark;
+  background: $main-color;
+  color: $background-color;
+  font-size: 1.3rem;
+  padding: 1rem;
+  transition: all .5s ease;
+
+  &:hover {
+    border: 1px solid $main-color;
+    background: $main-color-light;
+  }
+}
+
+.iframe-form { display: none; }
+
+.flash-success {
+  border: 1px solid #c1d689;
+  border-radius: 8px;
+  background: #cee298;
+  color: #4a6602;
+  padding: .8rem;
+  margin: 0 0 1rem 0;
+  opacity: 0;
+  display: none;
+
+  &.show { animation: flash 5s linear forwards; }
+}
+
+@keyframes flash {
+  0%,100% {
+    opacity: 0;
+  }
+  20%,80% { opacity: 1; }
+}
