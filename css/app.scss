@@ -336,7 +336,6 @@ ul.members {
 
 .gallery-row {
   display: flex;
-  height: 15rem;
 }
 
 .gallery-box {
@@ -349,6 +348,7 @@ ul.members {
   display: flex;
   flex-direction: column-reverse;
   font-size: 1.3rem;
+  height: 15rem;
   margin: 0 0 2rem 2rem;
   overflow: hidden;
   width: 15rem;
@@ -416,6 +416,37 @@ input[type="submit"] {
   display: none;
 
   &.show { animation: flash 5s linear forwards; }
+}
+
+.cont-btn-join { text-align: center; }
+
+.btn-join {
+  border: 2px solid $main-color;
+  border-radius: 15px;
+  color: $main-color;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  transition: all .5s ease;
+
+  &:hover {
+    background: $main-color;
+    color: $background-color;
+  }
+}
+
+@media (max-width: $small-media-break) {
+
+  .gallery-row {
+    flex-direction: column;
+  }
+
+  .gallery-box {
+    margin: 0 0 1rem 0;
+    width: auto;
+  }
+
 }
 
 @keyframes flash {
