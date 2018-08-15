@@ -333,3 +333,38 @@ ul.members {
 //   http://stackoverflow.com/questions/71074/how-to-remove-firefoxs-dotted-outline-on-buttons-as-well-as-links
 :focus { outline: none; }
 ::-moz-focus-inner { border: 0; }
+
+.gallery-row {
+  display: flex;
+  height: 15rem;
+}
+
+.gallery-box {
+  align-items: stretch;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1.3rem;
+  margin: 0 0 2rem 2rem;
+  overflow: hidden;
+  width: 15rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all .5s ease;
+
+  &:first-child { margin: 0 0 2rem 0; }
+  &:hover { opacity: .7; }
+
+  div {
+    background: rgba(0, 0, 0, .7);
+    padding: .8rem;
+  }
+
+  &.gtan { background-image: url("/images/folios/gtan.png"); }
+  &.kpfromer { background-image: url("/images/folios/kpfromer.png"); }
+  &.nfiner { background-image: url("/images/folios/nfiner.png"); }
+}
