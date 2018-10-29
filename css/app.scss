@@ -49,6 +49,7 @@ $small-media-break: 767px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'normalize';
+@import 'team';
 
 
 html, body {

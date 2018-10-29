@@ -1,0 +1,74 @@
+.members {
+  text-align: center;
+
+  li {
+    justify-content: flex-end;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-flex;
+    flex-direction: column;
+    list-style-type: none;
+    overflow: hidden;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem .2rem;
+    box-shadow: 1px 1px 4px #909090;
+
+    div {
+      background: #000;
+      padding: .1rem;
+    }
+  }
+
+  .brandon {
+    background: url("/images/team/brandon.jpg");
+    background-size: cover;
+  }
+  .edward {
+    background: url("/images/team/edward.jpg");
+    background-size: cover;
+  }
+  .ethan {
+    background: url("/images/team/ethan.jpg");
+    background-size: cover;
+  }
+  .gernene {
+    background: url("/images/team/gernene.jpg");
+    background-size: cover;
+  }
+  .kobe {
+    background: url("/images/team/kobe.jpg");
+    background-size: cover;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      cursor: default;
+    }
+  }
+  .kyle {
+    background: url("/images/team/kyle.jpg");
+    background-size: cover;
+  }
+  .leo {
+    background: url("/images/team/leo.jpg");
+    background-size: cover;
+  }
+  .mark {
+    background: url("/images/team/mark.jpg");
+    background-size: cover;
+  }
+  .owen {
+    background: url("/images/team/owen.jpg");
+    background-size: cover;
+  }
+  .ryan {
+    background: url("/images/team/ryan.jpg");
+    background-size: cover;
+  }
+  .sam {
+    background: url("/images/team/sam.jpg");
+    background-size: cover;
+  }
+}
